@@ -14,13 +14,6 @@ const About = () => {
     <div id="about" className={styles.aboutContainer}>
       <section className={`${styles.aboutSection} p-6`}>
         <div className={styles.imageContainer}>
-          {/* <Image
-            className={styles.image}
-            alt="Mohsin Raza"
-            src={mohsinImage}
-            width={300}
-            height={300}
-          /> */}
         </div>
         <div className={styles.contentContainer}>
           <h1 className={styles.title}>About Me</h1>
