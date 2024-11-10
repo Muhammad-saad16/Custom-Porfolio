@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Contact.module.css"; // Importing the updated CSS module
+// import { Button } from "@mui/material";
 // import Button from '@mui/material/Button'; // Import MUI Button
 
 const Contact = () => {
@@ -23,14 +24,12 @@ const Contact = () => {
         </div>
 
         {/* MUI Button with LinkedIn redirect */}
-        <Button
-          variant="contained"
-          color="primary"
+        <button
           onClick={GetInTouch}
           className={styles["contact-button"]} // Keep the custom styling for the button
         >
           LinkedIn
-        </Button>
+        </button>
       </div>
     </section>
   );
