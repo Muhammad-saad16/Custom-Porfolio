@@ -1,0 +1,196 @@
+.headerLogo {
+    font-size: 2rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+    font-weight: 900;
+    color: #2d3748;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .headerLogo:hover {
+    color: #667eea;
+  }
+  
+  .name {
+    font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+    color: #fff;
+    display: inline-block;
+    position: relative;
+    padding-right: 10px;
+    animation: nameHoverEffect 2s ease-in-out infinite;
+  }
+  
+  .name::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background-color: #2d3748;
+    color: #fff;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .name:hover::after {
+    transform: scaleX(1);
+  }
+  
+  .headerButton {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .headerLogo {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+
+
+  .header {
+    background-image: url("https://i.pinimg.com/736x/65/d2/8c/65d28cc891c9392ec5676dffd2711b65.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #333;
+    padding: 0rem 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1200;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .toggleButton {
+    display: none;
+    font-size: 1.5rem;
+    color: #ffffff;
+    background-color: #5a67d8; 
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1.5rem;
+    margin: 0rem 1rem;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1300;
+  }
+  
+  .toggleButton:hover {
+    background-color: #667eea;
+  }
+  
+  .headerNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  
+  .headerMenu {
+    display: flex;
+    gap: 2rem;
+    transition: all 0.3s ease;
+  }
+  
+  .headerButton {
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #667eea;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .headerButton:hover {
+    background-color: #5a67d8;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive Area */
+  @media (max-width: 768px) {
+    .toggleButton {
+      display: block;
+    }
+  
+    .headerMenu {
+      display: none;
+      flex-direction: column;
+      gap: 1.2rem;
+      width: 100%;
+      text-align: center;
+      background-color: #737a81; 
+    }
+  
+  
+    .headerMenu.active {
+      display: flex;
+    }
+  }
+    
+  /* Animation Area For name */
+  @keyframes nameHoverEffect {
+    0% {
+        color: #5a67d8;
+        transform: scale(1);
+        border: 3px solid #5a67d8;
+        padding: 5px;
+        box-shadow: 0 0 5px rgba(90, 103, 216, 0.4);
+      }
+      50% {
+        color: #fff;
+        transform: scale(1.05);
+        border: 3px solid #fff;
+        padding: 6px;
+        box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+      }
+      100% {
+        color: #5a67d8;
+        transform: scale(1);
+        border: 3px solid #5a67d8;
+        padding: 5px;
+        box-shadow: 0 0 5px rgba(90, 103, 216, 0.4);
+      }
+    }
+
+  
+  
+  @media (max-width: 768px) {
+    .headerMenu {
+      display: none;
+      flex-direction: column;
+      gap: 1.2rem;
+      width: 100%;
+      background-color: #737a81;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      padding: 1rem 0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+  
+    .headerMenu.active {
+      display: flex;
+    }
+  
+    .toggleButton {
+      display: block;
+    }
+  }
+  

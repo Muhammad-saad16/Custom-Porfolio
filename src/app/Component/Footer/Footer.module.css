@@ -1,0 +1,32 @@
+/* Footer Styles */
+.footer {
+    background: #1a202c;
+    color: #ffffff; /* White text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .footer-text {
+    font-size: 1.5rem; 
+    font-weight: bolder; 
+    color: #ffffff; 
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and transform */
+    margin-bottom: 1rem;
+  }
+  
+ 
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .footer-text {
+      font-size: 1.125rem;
+    }
+  
+  
+  }
+  

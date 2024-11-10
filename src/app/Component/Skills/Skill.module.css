@@ -1,0 +1,120 @@
+/* Skills Section Styling */
+.skills-section {
+  background-image: url("https://i.pinimg.com/736x/65/d2/8c/65d28cc891c9392ec5676dffd2711b65.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+    padding: 4rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    }
+    
+
+    .skills-section:hover .skills-image {
+      transform: translateY(0);
+    }
+    
+    /* Skills Container */
+    .skills-container {
+      background: rgba(163, 191, 250, 0.85);
+      border-radius: 1rem;
+      padding: 2.5rem;
+      max-width: 700px;
+      width: 100%;
+      text-align: center;
+      animation: fadeInUp 1s ease-out;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+      transition: transform 0.4s ease;
+    }
+    
+    /* Title */
+    .skills-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #1a202c;
+      margin-bottom: 0.5rem;
+    }
+    
+    /* Description */
+    .skills-description {
+      font-size: 1.125rem;
+      color: #1a202c;
+      margin-top: 1rem;
+    }
+    
+    /* Button Styling with Hover Animation */
+    .skills-button {
+      margin-top: 1.5rem;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #fff;
+      background-color: #667eea;
+      border: none;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+    
+    .skills-button:hover {
+      background-color: #5a67d8;
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+    }
+    
+    /* Slide-in and Fade-up Animation */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    /* Extra Info Section */
+    .extra-info {
+      margin-top: 1.5rem;
+      font-size: 1.125rem;
+      color: #1a202c;
+      padding: 1rem;
+      background: rgba(163, 191, 250, 0.85);
+      border-radius: 1rem;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+      opacity: 0;
+      animation: fadeIn 1s forwards; /* Fade-in animation */
+    }
+    
+    /* Fade-in Animation */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+      .skills-title {
+        font-size: 2rem;
+      }
+    
+      .skills-description {
+        font-size: 1rem;
+      }
+    
+      .skills-container {
+        padding: 2rem;
+      }
+    }
+    

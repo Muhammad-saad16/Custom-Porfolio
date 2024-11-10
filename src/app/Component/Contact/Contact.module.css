@@ -1,0 +1,107 @@
+/* Contact Section Styling */
+.contact-section {
+    background-image: url("https://i.pinimg.com/736x/65/d2/8c/65d28cc891c9392ec5676dffd2711b65.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+    padding: 4rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contact Container */
+.contact-container {
+    background: rgba(163, 191, 250, 0.85); /* Semi-transparent background */
+    border-radius: 2rem;
+    padding: 2.5rem;
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Hover effect to lift the box */
+.contact-container:hover {
+    transform: translateY(-3px); /* Lift effect on hover */
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4); /* Stronger shadow on hover */
+}
+
+/* Title */
+.contact-title {
+    font-size: 2.5rem;
+    color: #1a202c;
+    margin-bottom: 0.6rem;
+}
+
+/* Description */
+.contact-description {
+    font-size: 1.120rem;
+    color: #1a202c;
+    margin-top: 1rem;
+}
+
+/* Contact Information */
+.contact-info {
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    color: #1a202c;
+    padding: 1rem;
+    background: rgba(163, 191, 250, 0.85);
+    border-radius: 0.9rem;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-info:hover {
+    background-color: #5a67d8; /* Slightly darker shade on hover */
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Button Styling with Hover Animation */
+.contact-button {
+    margin-top: 1.5rem;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #667eea;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for button */
+.contact-button:hover {
+    background-color: #5a67d8;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Focus effect for accessibility */
+.contact-button:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(102, 126, 234, 0.6);
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .contact-title {
+        font-size: 2rem;
+    }
+
+    .contact-description {
+        font-size: 1rem;
+    }
+
+    .contact-container {
+        padding: 2rem;
+    }
+}
+
